@@ -535,8 +535,8 @@ void drawDepthUI(){
 }
 String convertFramesToTimeString(int frames){  // Requirement #4
   frames=gameTimer/60;
-  int ss = frames%60 ;
-  int mm = (frames/60) % 60 ;
+  int ss = int(frames%60) ;
+  int mm = int((frames/60) % 60) ;
   String ans_mm, ans_ss;
   if(mm<10){
     ans_mm ="0"+str(mm);
